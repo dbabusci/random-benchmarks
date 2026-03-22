@@ -10,7 +10,9 @@ public class ProgramExecutionHandler
     private static readonly List<string> _inputs = new List<string>()
     {
         "Enter the benchmark you want to run:\n",
-        "\tNumericInit -> 1\n",
+        "\tNSee the effects of numeric literals when initalizing variables -> 1\n",
+        "\tDifference between string literal constructio and string concatination -> 2\n",
+        "\tDifference between adding to list when capcity is initialized vs when it is not -> 3\n",
         "Option: "
     };
 
@@ -24,7 +26,7 @@ public class ProgramExecutionHandler
             return ProgramOptions.Error;
 
         if (int.TryParse(rawText, out int i))
-            return ProgramOptions.NumericInit;
+            return (ProgramOptions) i;
 
         return (ProgramOptions)i;
     }
@@ -35,6 +37,12 @@ public class ProgramExecutionHandler
         {
             case ProgramOptions.NumericInit:
                 BenchmarkRunner.Run<NumericInit>();
+                break;
+            case ProgramOptions.StringBuilding:
+                BenchmarkRunner.Run<StringBuilding>();
+                break;
+            case ProgramOptions.CapacityInit:
+                BenchmarkRunner.Run<CapacityInit>();
                 break;
             case ProgramOptions.Error:
             default:

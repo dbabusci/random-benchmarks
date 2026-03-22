@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>DomBenchmarks.Tests.NumericInit-20260315-161703</title>
+<title>DomBenchmarks.Tests.NumericInit-20260322-142823</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -14,7 +14,7 @@
 <body>
 <pre><code>
 BenchmarkDotNet v0.15.8, Linux Ubuntu 24.04.4 LTS (Noble Numbat)
-AMD Ryzen 5 PRO 7530U with Radeon Graphics 1.10GHz, 1 CPU, 12 logical and 6 physical cores
+AMD Ryzen 5 PRO 7530U with Radeon Graphics 3.19GHz, 1 CPU, 12 logical and 6 physical cores
 .NET SDK 10.0.103
   [Host]     : .NET 10.0.3 (10.0.3, 10.0.326.7603), X64 RyuJIT x86-64-v3
   DefaultJob : .NET 10.0.3 (10.0.3, 10.0.326.7603), X64 RyuJIT x86-64-v3
@@ -24,12 +24,12 @@ AMD Ryzen 5 PRO 7530U with Radeon Graphics 1.10GHz, 1 CPU, 12 logical and 6 phys
 <table>
 <thead><tr><th>Method    </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th>
 </tr>
-</thead><tbody><tr><td>DecimalInit</td><td>0.0045 ns</td><td>0.0035 ns</td><td>0.0033 ns</td><td>0.0033 ns</td>
-</tr><tr><td>DecimalInitInt32</td><td>0.0000 ns</td><td>0.0000 ns</td><td>0.0000 ns</td><td>0.0000 ns</td>
-</tr><tr><td>LongInit</td><td>0.0017 ns</td><td>0.0012 ns</td><td>0.0011 ns</td><td>0.0017 ns</td>
-</tr><tr><td>LongInitInt32</td><td>0.0000 ns</td><td>0.0000 ns</td><td>0.0000 ns</td><td>0.0000 ns</td>
-</tr><tr><td>FloatInit</td><td>0.0003 ns</td><td>0.0006 ns</td><td>0.0006 ns</td><td>0.0000 ns</td>
-</tr><tr><td>FloatInitInt32</td><td>0.0000 ns</td><td>0.0000 ns</td><td>0.0000 ns</td><td>0.0000 ns</td>
+</thead><tbody><tr><td>DecimalInit</td><td>0.0006 ns</td><td>0.0011 ns</td><td>0.0010 ns</td><td>0.0000 ns</td>
+</tr><tr><td>DecimalInitInt32</td><td>0.0051 ns</td><td>0.0030 ns</td><td>0.0025 ns</td><td>0.0048 ns</td>
+</tr><tr><td>LongInit</td><td>0.0014 ns</td><td>0.0062 ns</td><td>0.0049 ns</td><td>0.0000 ns</td>
+</tr><tr><td>LongInitInt32</td><td>0.0002 ns</td><td>0.0004 ns</td><td>0.0004 ns</td><td>0.0000 ns</td>
+</tr><tr><td>FloatInit</td><td>0.0131 ns</td><td>0.0166 ns</td><td>0.0156 ns</td><td>0.0055 ns</td>
+</tr><tr><td>FloatInitInt32</td><td>0.0001 ns</td><td>0.0004 ns</td><td>0.0003 ns</td><td>0.0000 ns</td>
 </tr></tbody></table>
 </body>
 </html>
