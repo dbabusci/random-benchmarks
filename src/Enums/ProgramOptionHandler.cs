@@ -5,5 +5,6 @@ public enum ProgramOptions
     Error = 0,
     NumericInit = 1,
     StringBuilding = 2,
-    CapacityInit = 3
+    CapacityInit = 3,
+    ContinueIf = 4
 }

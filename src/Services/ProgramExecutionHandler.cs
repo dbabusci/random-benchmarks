@@ -13,6 +13,7 @@ public class ProgramExecutionHandler
         "\tNSee the effects of numeric literals when initalizing variables -> 1\n",
         "\tDifference between string literal constructio and string concatination -> 2\n",
         "\tDifference between adding to list when capcity is initialized vs when it is not -> 3\n",
+        "\tDifference between if not and if continue inside loops -> 4\n",
         "Option: "
     };
 
@@ -43,6 +44,9 @@ public class ProgramExecutionHandler
                 break;
             case ProgramOptions.CapacityInit:
                 BenchmarkRunner.Run<CapacityInit>();
+                break;
+            case ProgramOptions.ContinueIf:
+                BenchmarkRunner.Run<ContinueIf>();
                 break;
             case ProgramOptions.Error:
             default:
